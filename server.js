@@ -1,7 +1,10 @@
 import express from "express";
+import cors from "cors"
 
 const app = express()
 const PORT = process.env.PORT || 8080
+
+app.use(cors())
 
 const productList = [ 
     {name:"Samsung S22 Ultra", price:300},
